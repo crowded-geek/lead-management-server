@@ -45,3 +45,15 @@ io.on('connection', (socket) => {
 http.listen(4000, () => {
   console.log('Listening on port 4000');
 })
+
+module.exports = {
+  helloWorld: function(){
+    return 'hello';
+  },
+  addNumbers: function(value1, value2){
+    return value1 + value2;
+  },
+  multiplyNumbers: function(value1, value2){
+  	return value1 * value2;
+  }
+}
